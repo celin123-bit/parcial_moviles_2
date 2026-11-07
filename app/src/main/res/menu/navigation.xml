@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_packages" android:icon="@drawable/ic_explore" android:title="@string/packages" />
+    <item android:id="@+id/nav_reservations" android:icon="@drawable/ic_reservation" android:title="@string/reservations" />
+    <item android:id="@+id/nav_clients" android:icon="@drawable/ic_clients" android:title="@string/clients" />
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Moivo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:textColorSecondary">@color/muted</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Moivo.Body</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Moivo.Body</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Moivo.Title</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Moivo.Body</item>
+    </style>
+    <style name="TextAppearance.Moivo.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="lineHeight">@dimen/text_line_height</item>
+    </style>
+    <style name="TextAppearance.Moivo.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="lineHeight">@dimen/text_line_height</item>
+    </style>
+    <style name="Title">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="lineHeight">@dimen/text_line_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="Body">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="lineHeight">@dimen/text_line_height</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textColor">@color/muted</item>
+    </style>
+    <style name="Label">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="Eyebrow" parent="Label">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+    <style name="Input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+    </style>
+    <style name="Action" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+    <style name="SecondaryAction" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+    <style name="TonalAction" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="backgroundTint">@color/surface_warm</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+</resources>

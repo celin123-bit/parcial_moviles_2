@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <FrameLayout android:id="@+id/map_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginHorizontal="12dp" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/meeting" style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/message" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/map_hint" android:accessibilityLiveRegion="polite" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/locate" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/my_location" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/center" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/center_meeting" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/external" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/open_google_maps" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/settings" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/location_settings" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

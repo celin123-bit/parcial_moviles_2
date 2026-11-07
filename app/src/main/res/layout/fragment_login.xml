@@ -1,0 +1,33 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/login_form" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="20dp" android:paddingTop="12dp" android:paddingBottom="28dp">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="26dp" app:cardElevation="0dp" app:cardBackgroundColor="@color/primary_dark">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/hero_andes" android:scaleType="centerCrop" android:contentDescription="@null" />
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/primary_dark" android:alpha="0.72" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="220dp" android:orientation="vertical" android:gravity="bottom" android:padding="22dp">
+                    <com.google.android.material.textview.MaterialTextView style="@style/Eyebrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/brand_signature" android:textColor="@color/accent" />
+                    <com.google.android.material.textview.MaterialTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/brand_tagline" android:textColor="@color/white" android:textSize="@dimen/text_title" android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@string/login_headline" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/login_intro" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/email_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:maxLength="120" android:autofillHints="username" android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/password_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password" app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/password" android:saveEnabled="false" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLength="100" android:autofillHints="password" android:singleLine="true" android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/login" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/login" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:text="@string/access_hint" android:textSize="@dimen/text_body" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="@string/demo_credentials" android:textSize="@dimen/text_body" android:textIsSelectable="true" />
+    </LinearLayout>
+<LinearLayout android:id="@+id/session_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:visibility="gone">
+<com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/session_active" />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/session_description" />
+<com.google.android.material.button.MaterialButton android:id="@+id/session_trips" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/manage_trips" />
+<com.google.android.material.button.MaterialButton android:id="@+id/session_salaries" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/view_salaries" />
+<com.google.android.material.button.MaterialButton android:id="@+id/session_logout" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/logout" />
+</LinearLayout></LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pe.edu.moivo.data.RepositoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-09T22:31:16" hostname="DESKTOP-NP4A591" time="4.842">
+  <properties/>
+  <testcase name="reservationAndBothStatesSurviveClosingAndReopeningDatabase" classname="pe.edu.moivo.data.RepositoryTest" time="4.366"/>
+  <testcase name="priceSnapshotDoesNotChangeWithCatalogPrice" classname="pe.edu.moivo.data.RepositoryTest" time="0.135"/>
+  <testcase name="duplicateDniIsRejectedWithoutDeletingClient" classname="pe.edu.moivo.data.RepositoryTest" time="0.113"/>
+  <testcase name="seedDoesNotDuplicateOrOverwriteExistingPackage" classname="pe.edu.moivo.data.RepositoryTest" time="0.098"/>
+  <testcase name="reservationRejectsMissingForeignKeysAndStaleStateChanges" classname="pe.edu.moivo.data.RepositoryTest" time="0.13"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

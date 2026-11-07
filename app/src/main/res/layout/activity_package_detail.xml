@@ -1,0 +1,18 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:orientation="vertical">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="210dp" app:cardCornerRadius="24dp" app:cardElevation="0dp">
+            <ImageView android:id="@+id/hero_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/name" style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/summary" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/price" style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/primary" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/description" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/includes" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/includes" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/meeting" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/meeting" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/map" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/view_map" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/reserve" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reserve" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/local_notice" android:textSize="@dimen/text_body" />
+    </LinearLayout>
+</ScrollView>

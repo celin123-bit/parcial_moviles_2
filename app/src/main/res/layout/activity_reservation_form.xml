@@ -1,0 +1,18 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_reservation" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/client" android:labelFor="@id/client_spinner" />
+        <Spinner android:id="@+id/client_spinner" android:layout_width="match_parent" android:layout_height="56dp" android:spinnerMode="dropdown" android:saveEnabled="false" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/new_client" style="@style/TonalAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_client" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tour_package" android:labelFor="@id/package_spinner" />
+        <Spinner android:id="@+id/package_spinner" android:layout_width="match_parent" android:layout_height="56dp" android:spinnerMode="dropdown" android:saveEnabled="false" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/date_label" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/date" style="@style/TonalAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_date" android:saveEnabled="false" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/people_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/people">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/people" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:maxLength="2" android:text="1" android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/total" style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:accessibilityLiveRegion="polite" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/error" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/error" android:accessibilityLiveRegion="polite" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/save" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/save_reservation" />
+    </LinearLayout>
+</ScrollView>

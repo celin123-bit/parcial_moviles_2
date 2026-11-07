@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/surface_warm" android:padding="24dp">
+<ImageView android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_moivo" android:contentDescription="@null" android:layout_marginBottom="16dp" />
+<com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/brand_tagline"  />
+</LinearLayout>

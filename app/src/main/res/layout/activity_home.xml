@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/section_title" style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20dp" android:text="@string/packages" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="16dp" android:clipToPadding="false" android:paddingBottom="8dp" />
+        <com.google.android.material.textview.MaterialTextView android:id="@+id/empty" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:padding="32dp" android:gravity="center" android:text="@string/empty" />
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/create" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20dp" android:text="@string/new_reservation" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/navigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/surface" app:menu="@menu/navigation" app:labelVisibilityMode="labeled" app:itemIconTint="@color/primary" app:itemTextColor="@color/primary" />
+</LinearLayout>

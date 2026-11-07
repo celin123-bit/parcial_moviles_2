@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_client" />
+        <com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/client_hint" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/name_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/full_name">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/name" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName|textCapWords" android:maxLength="80" android:autofillHints="name" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/document_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/dni">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/document" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:maxLength="8" android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/email_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:maxLength="120" android:autofillHints="emailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/phone_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/phone" android:textSize="@dimen/text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:maxLength="9" android:autofillHints="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/save" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/save_client" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nav_contact"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_intro"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_demo"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_email" android:id="@+id/company_details" android:textIsSelectable="true" />
+<com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_form"  />
+<com.google.android.material.textfield.TextInputLayout android:id="@+id/contact_name_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/full_name">
+<com.google.android.material.textfield.TextInputEditText android:id="@+id/contact_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName|textCapWords" android:maxLength="80" android:textSize="@dimen/text_body" android:autofillHints="name" />
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout android:id="@+id/contact_email_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email">
+<com.google.android.material.textfield.TextInputEditText android:id="@+id/contact_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:maxLength="120" android:textSize="@dimen/text_body" android:autofillHints="emailAddress" android:singleLine="true" />
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout android:id="@+id/contact_phone_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone">
+<com.google.android.material.textfield.TextInputEditText android:id="@+id/contact_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:maxLength="9" android:textSize="@dimen/text_body" android:autofillHints="phone" android:singleLine="true" />
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout android:id="@+id/contact_message_layout" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/contact_message">
+<com.google.android.material.textfield.TextInputEditText android:id="@+id/contact_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textMultiLine|textCapSentences" android:maxLength="1000" android:textSize="@dimen/text_body" android:minLines="4" android:gravity="top" android:importantForAutofill="no" />
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_delivery_hint"  />
+<com.google.android.material.button.MaterialButton android:id="@+id/send_contact" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_send" />
+<com.google.android.material.button.MaterialButton android:id="@+id/copy_contact" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_copy" />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_ready" android:id="@+id/contact_status" android:visibility="gone" android:accessibilityLiveRegion="polite" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pe.edu.moivo.domain.ValidationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-09T22:31:21" hostname="DESKTOP-NP4A591" time="0.004">
+  <properties/>
+  <testcase name="stateMachineHasExactlyTwoForwardTransitions" classname="pe.edu.moivo.domain.ValidationTest" time="0.001"/>
+  <testcase name="demoCredentialsAreExplicitAndRejectInvalidPassword" classname="pe.edu.moivo.domain.ValidationTest" time="0.0"/>
+  <testcase name="clientsRequireValidFields" classname="pe.edu.moivo.domain.ValidationTest" time="0.001"/>
+  <testcase name="reservationsRejectMissingSelectionsPastDatesAndInvalidHeadcounts" classname="pe.edu.moivo.domain.ValidationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,4 @@
+# Android Studio genera sdk.dir automáticamente. Usa / para las rutas en Windows.
+# sdk.dir=C:/Users/TU_USUARIO/AppData/Local/Android/Sdk
+# Clave de Google Cloud con Maps SDK for Android habilitado.
+MAPS_API_KEY=PEGA_TU_API_KEY_AQUI

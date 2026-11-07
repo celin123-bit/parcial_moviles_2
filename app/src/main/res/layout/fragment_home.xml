@@ -1,0 +1,10 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<ImageView android:layout_width="match_parent" android:layout_height="190dp" android:src="@drawable/hero_andes" android:scaleType="centerCrop" android:contentDescription="@null" android:layout_marginBottom="24dp" />
+<com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/home_title"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_intro"  />
+<com.google.android.material.button.MaterialButton android:id="@+id/manage_trips" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/manage_trips" />
+<com.google.android.material.button.MaterialButton android:id="@+id/view_salaries" style="@style/SecondaryAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/view_salaries" />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_demo"  />
+</LinearLayout>
+</ScrollView>

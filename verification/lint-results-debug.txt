@@ -1,0 +1,160 @@
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:36: Warning: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.8.0 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:37: Warning: A newer version of com.google.android.material:material than 1.12.0 is available: 1.14.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:38: Warning: A newer version of androidx.activity:activity than 1.10.1 is available: 1.13.0 [GradleDependency]
+    implementation 'androidx.activity:activity:1.10.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:40: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.7'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:41: Warning: A newer version of androidx.lifecycle:lifecycle-livedata than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.7'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:42: Warning: A newer version of androidx.room:room-runtime than 2.7.2 is available: 2.8.5 [GradleDependency]
+    implementation 'androidx.room:room-runtime:2.7.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:43: Warning: A newer version of androidx.room:room-compiler than 2.7.2 is available: 2.8.5 [GradleDependency]
+    annotationProcessor 'androidx.room:room-compiler:2.7.2'
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:44: Warning: A newer version of com.google.android.gms:play-services-maps than 19.2.0 is available: 20.0.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-maps:19.2.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:45: Warning: A newer version of com.google.android.gms:play-services-location than 21.3.0 is available: 21.4.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:48: Warning: A newer version of androidx.test:core than 1.6.1 is available: 1.7.0 [GradleDependency]
+    testImplementation 'androidx.test:core:1.6.1'
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:50: Warning: A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:51: Warning: A newer version of androidx.test:rules than 1.6.1 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test:rules:1.6.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:52: Warning: A newer version of androidx.test.espresso:espresso-core than 3.6.1 is available: 3.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:53: Warning: A newer version of androidx.test.espresso:espresso-contrib than 3.6.1 is available: 3.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.6.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\build.gradle:54: Warning: A newer version of androidx.test.uiautomator:uiautomator than 2.3.0 is available: 2.4.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\Usuario\Downloads\moivo\app\src\main\AndroidManifest.xml:8: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+    <application android:name=".MoivoApp" android:allowBackup="false"
+                                                               ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\HomeActivity.java:68: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.sectionTitle.setText("Paquetes turísticos · " + packages.size());
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\HomeActivity.java:68: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.sectionTitle.setText("Paquetes turísticos · " + packages.size());
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\HomeActivity.java:72: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.sectionTitle.setText("Clientes registrados · " + clients.size());
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\HomeActivity.java:72: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.sectionTitle.setText("Clientes registrados · " + clients.size());
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\HomeActivity.java:76: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.sectionTitle.setText("Tus reservas · " + reservations.size());
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\HomeActivity.java:76: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.sectionTitle.setText("Tus reservas · " + reservations.size());
+                                         ~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\MapActivity.java:80: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tour = value; b.meeting.setText(tour.name + "\n" + tour.meetingPoint + String.format(Locale.US, "\n%.6f, %.6f", tour.latitude, tour.longitude));
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\MapActivity.java:165: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    private void showMessage(String text) { if (b != null) b.message.setText(mapNotice + text); }
+                                                                             ~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\PackageDetailActivity.java:16: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            b.name.setText(p.name); b.summary.setText(p.destination + "\n" + p.duration);
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\PackageDetailActivity.java:17: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            b.price.setText(Formats.money(p.priceCents) + " / persona");
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\PackageDetailActivity.java:17: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            b.price.setText(Formats.money(p.priceCents) + " / persona");
+                                                          ~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationDetailActivity.java:44: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        b.title.setText("Reserva #" + r.id); b.status.setText(r.status);
+                        ~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationDetailActivity.java:44: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        b.title.setText("Reserva #" + r.id); b.status.setText(r.status);
+                        ~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationDetailActivity.java:46: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        b.details.setText("CLIENTE\n" + current.client.name + "\nDNI: " + current.client.document + "\nCorreo: " + current.client.email + "\nTeléfono: " + current.client.phone
+                          ^
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationFormActivity.java:119: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            b.total.setText("Total: " + Formats.money(p.priceCents * people()) + "\n" + Formats.money(p.priceCents) + " por persona"); return;
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationFormActivity.java:119: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            b.total.setText("Total: " + Formats.money(p.priceCents * people()) + "\n" + Formats.money(p.priceCents) + " por persona"); return;
+                            ~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationFormActivity.java:119: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            b.total.setText("Total: " + Formats.money(p.priceCents * people()) + "\n" + Formats.money(p.priceCents) + " por persona"); return;
+                                                                                                                      ~~~~~~~~~~~~~~
+C:\Users\Usuario\Downloads\moivo\app\src\main\java\pe\edu\moivo\ui\ReservationFormActivity.java:121: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        b.total.setText("Selecciona un paquete y una cantidad válida para calcular el total.");
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Users\Usuario\Downloads\moivo\app\src\main\res\layout\activity_reservation_form.xml:12: Warning: Hardcoded string "1", should use @string resource [HardcodedText]
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/people" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:maxLength="2" android:text="1" android:importantForAutofill="no" />
+                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 35 warnings

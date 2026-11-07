@@ -1,0 +1,12 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<com.google.android.material.textview.MaterialTextView style="@style/Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/salary_title"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/salary_intro"  />
+<com.google.android.material.textview.MaterialTextView style="@style/Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/employee_label" android:labelFor="@id/employee_spinner" />
+<Spinner android:id="@+id/employee_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp" android:spinnerMode="dialog" android:prompt="@string/employee_prompt" />
+<com.google.android.material.button.MaterialButton android:id="@+id/consult_salary" style="@style/Action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/salary_consult" />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/salary_missing" android:id="@+id/salary_error" android:visibility="gone" android:textColor="@color/error" android:accessibilityLiveRegion="polite" />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/salary_intro" android:id="@+id/salary_result" android:visibility="gone" android:textIsSelectable="true" android:accessibilityLiveRegion="polite" />
+<com.google.android.material.textview.MaterialTextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/salary_demo"  />
+</LinearLayout>
+</ScrollView>

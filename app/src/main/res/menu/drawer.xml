@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:title="@string/nav_home" android:icon="@drawable/ic_explore" />
+        <item android:id="@+id/nav_about" android:title="@string/nav_about" android:icon="@drawable/ic_clients" />
+        <item android:id="@+id/nav_contact" android:title="@string/nav_contact" android:icon="@drawable/ic_contact" />
+        <item android:id="@+id/nav_login" android:title="@string/nav_login" android:icon="@drawable/ic_login" />
+    </group>
+</menu>

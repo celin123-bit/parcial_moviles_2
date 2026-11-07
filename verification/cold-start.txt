@@ -1,0 +1,7 @@
+Starting: Intent { cmp=pe.edu.moivo/.ui.LoginActivity }
+Status: ok
+LaunchState: COLD
+Activity: pe.edu.moivo/.ui.HomeActivity
+TotalTime: 1976
+WaitTime: 1980
+Complete
